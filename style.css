@@ -1,0 +1,74 @@
+body,
+html {
+    background-color: #220056;
+
+}
+
+
+/* ------ navbar ------ */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    color: back;
+    background-color: white;
+
+}
+
+.navbar a {
+    padding: 0px;
+    margin: 20px;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+.navbar a:hover {
+    background-color: #8B4DFF;
+    border-radius: 40%;
+    width: 4em;
+    height: 30px;
+}
+
+/* ----- welcome-section --------- */
+
+.ali img {
+    border-radius: 50%;
+    width: 110px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+.myname {
+    text-align: center;
+    background-image: linear-gradient(#8B4DFF, #111111);
+    padding: 30em;
+}
+
+#div1 {
+
+    background-color: white;
+}
+
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+u {
+    color: white;
+}
+
+p {
+    margin-top: 0px;
+    color: #4FFFB8;
+    font-size: 14.5px;
+}
+
+/* --------- projects -------- */
+
+
+.project-tile {
+    display: flex;
+    width: 250px;
+}
