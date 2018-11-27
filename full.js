@@ -1,0 +1,3 @@
+$(function () {
+    var effects = 'animated '
+});
