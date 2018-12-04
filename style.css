@@ -1,7 +1,9 @@
 body,
 html {
-    background-color: #220056;
-
+    background-image: url("screen/Web\ 1920\ –\ 2.jpg");
+    background-size: cover;
+    margin-bottom: 115em;
+    scroll-behavior: smooth;
 }
 
 
@@ -85,24 +87,23 @@ i {
 
 /* --------------------------------- animation ------------------------- */
 div.ali {
-    animation-duration: 8.50s;
-    animation-iteration-count: infinite;
+    animation-duration: 3s;
 
 }
 
 div.olo {
-    animation-duration: 5s;
+    animation-duration: 3s;
 
 }
 
-h3.blind {
+/* h3.blind {
     animation-duration: 3s;
     animation-delay: 6s;
-}
+} */
 
 p {
     animation-duration: 3s;
-    animation-delay: 5s
+    animation-delay: 2.75s
 }
 
 
@@ -164,13 +165,20 @@ p {
 
 /* --------- projects -------- */
 
+.card:hover {
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
+
+
 
 .project-tile {
     display: flex;
     width: 250px;
 }
 
-#projects {
+.projects {
     background-image: linear-gradient(#111111, rgba(139, 77, 255, 0.904));
 
     .container {
@@ -212,4 +220,45 @@ p {
         transform: translate(-50%, -50%);
         white-space: nowrap;
     }
+}
+
+.card {
+    height: 390px;
+    width: 350px;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+/*------------------------------------- carouse -------------------------------*/
+.carousel-item img {
+    display: flex;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.containerbox1 {
+    background-color: #fff;
+    border: solid white 50px;
+
+
+}
+
+.containerbox1 p {
+    text-align: center;
+    color: #111111;
+    text-decoration: underline;
+    margin-bottom: 2em;
+    font-weight: bold;
+
+}
+
+/* --------------------------------------- contact ---------------------------------- */
+.contact-dontainer {
+    border: solid black 50px;
+}
+
+.contact-dontainer img {
+    width: 100%;
+
 }
