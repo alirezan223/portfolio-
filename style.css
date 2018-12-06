@@ -238,20 +238,13 @@ p {
 }
 
 .containerbox1 {
-    background-color: #fff;
+
     border: solid white 50px;
 
 
 }
 
-.containerbox1 p {
-    text-align: center;
-    color: #111111;
-    text-decoration: underline;
-    margin-bottom: 2em;
-    font-weight: bold;
 
-}
 
 /* --------------------------------------- contact ---------------------------------- */
 .contact-dontainer {
