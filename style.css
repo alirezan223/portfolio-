@@ -1,6 +1,6 @@
 body,
 html {
-    background-image: url("screen/Web\ 1920\ –\ 2.jpg");
+    background-image: url("");
     background-size: cover;
     margin-bottom: 115em;
     scroll-behavior: smooth;
@@ -96,10 +96,6 @@ div.olo {
 
 }
 
-/* h3.blind {
-    animation-duration: 3s;
-    animation-delay: 6s;
-} */
 
 p {
     animation-duration: 3s;
@@ -111,40 +107,46 @@ p {
 
 
 /* ----- welcome-section --------- */
+.blur img {
+    filter: blur(3px);
+    width: 100%;
+    height: auto;
 
-.ali img {
+
+}
+
+.mounten {
+    margin: px;
+
+}
+
+.bg-text img {
     border-radius: 50%;
     width: 110px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+
+}
+
+.bg-text {
     text-align: center;
+    text-decoration: underline;
+    font-size: 17px;
+    line-height: 0.8;
+    font-weight: 400;
+    font-style: italic;
+    color: #111111;
+    font-weight: bold;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 100%;
+    padding: 20px;
+
+
 }
 
-.myname {
-    text-align: center;
-    background-image: linear-gradient(#8B4DFF, #111111);
-    padding: 15em;
-}
-
-#div1 {
-
-    background-color: white;
-}
-
-
-h1 {
-    font-size: 20px;
-    margin-bottom: 4px;
-}
-
-u {
-    color: white;
-}
-
-p {
-    margin-top: 0px;
-    color: #4FFFB8;
-    font-size: 14.5px;
-}
 
 /* ----------- line ------------ */
 
@@ -158,7 +160,7 @@ p {
     padding: 4em;
 }
 
-#blabla div {
+#blabla {
     text-decoration: underline;
     color: white;
 }
@@ -179,7 +181,7 @@ p {
 }
 
 .projects {
-    background-image: linear-gradient(#111111, rgba(139, 77, 255, 0.904));
+    background-image: linear-gradient(#111111, #8B4DFF);
 
     .container {
         position: relative;
