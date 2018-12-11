@@ -4,6 +4,7 @@ html {
     background-size: cover;
     margin-bottom: 115em;
     scroll-behavior: smooth;
+    background: #111111;
 }
 
 
@@ -81,6 +82,7 @@ html {
 i {
     font-size: 35px;
     text-align: left;
+    color: #220056;
 }
 
 
@@ -107,42 +109,31 @@ p {
 
 
 /* ----- welcome-section --------- */
-.blur img {
-    filter: blur(3px);
-    width: 100%;
-    height: auto;
-
-
-}
-
 .mounten {
-    margin: px;
-
+    width: 100%;
+    height: 700px;
+    background-image: url("screen/evening-55067.png")
 }
 
-.bg-text img {
-    border-radius: 50%;
-    width: 110px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
-
-}
-
-.bg-text {
+.blur {
     text-align: center;
     text-decoration: underline;
     font-size: 17px;
     line-height: 0.8;
     font-weight: 400;
     font-style: italic;
-    color: #111111;
+    color: #fff;
     font-weight: bold;
-    position: absolute;
-    top: 39%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    width: 100%;
-    padding: 20px;
+    padding-TOP: 15em;
+
+}
+
+
+
+.blur img {
+    border-radius: 50%;
+    width: 110px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 
 
 }
@@ -158,12 +149,10 @@ p {
     font-size: 1em;
     margin: 0;
     padding: 4em;
-}
-
-#blabla {
     text-decoration: underline;
     color: white;
 }
+
 
 /* --------- projects -------- */
 
@@ -181,7 +170,7 @@ p {
 }
 
 .projects {
-    background-image: linear-gradient(#111111, #8B4DFF);
+    background-image: linear-gradient(#111111, #220056);
 
     .container {
         position: relative;
@@ -241,8 +230,8 @@ p {
 
 .containerbox1 {
 
-    border: solid white 50px;
-
+    border-top: solid white 50px;
+    border-bottom: solid white 50px;
 
 }
 
@@ -250,7 +239,7 @@ p {
 
 /* --------------------------------------- contact ---------------------------------- */
 .contact-dontainer {
-    border: solid black 50px;
+    border: solid #111111 50px;
 }
 
 .contact-dontainer img {
