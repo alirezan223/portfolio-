@@ -1,10 +1,16 @@
-body,
+body {
+
+    background: #8360c3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2ebf91, #8360c3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2ebf91, #8360c3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 html {
-    background-image: url("");
-    background-size: cover;
-    margin-bottom: 95em;
     scroll-behavior: smooth;
-    background: #111111;
 }
 
 
@@ -12,8 +18,6 @@ html {
 :root {
     --jumbotron-padding-y: 3rem;
 }
-
-
 
 .jumbotron {
     padding-top: var(--jumbotron-padding-y);
@@ -29,6 +33,35 @@ html {
     }
 }
 
+
+/* ------------------------ icon-bar --------------------------- */
+.icon-bar {
+    width: 100%;
+    background-color: #220056;
+    overflow: auto;
+    margin-top: 10px;
+
+    border-radius: 4px;
+}
+
+.icon-bar a {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: ;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #343a40;
+}
+
+.på {
+    background-color: #343a40;
+}
+
 /* ------------------------ media --------------------------- */
 
 @media (max-width: 380px) {
@@ -36,58 +69,99 @@ html {
         display: none;
     }
 
-    div.myname {
+    .s8 {
         display: none;
-    }
-
-    div.olo {
-        text-align: center;
-
-    }
-
-    a.navbar-brand {
-        display: inline;
-    }
-
-
-    a,
-    strong {
-        display: none;
-
     }
 
 }
 
-@media (max-width: 750px) {
+@media (max-width: 812px) {
     a.mobamba {
         display: none;
     }
+
 }
 
-@media (max-width: 3000px) {
+@media (max-width: 375px) {
+    .my-name {
+        display: none;
+    }
+
+    #projects {
+        background-image: linear-gradient(#111111, #220056);
+
+    }
+
+    #blabla {
+        background: gray;
+    }
+
+    #welcome-section {
+        display: none;
+    }
+
+    .project-tile {
+        display: none;
+    }
+
+    .section2 {
+
+        height: 500px;
+    }
+
+    .containerbox1 {
+        display: none;
+    }
+
+    .progress12 {
+        margin-top: 70em;
+    }
+
+
+    .ongoingprojects {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .ongoing {
+        display: none;
+    }
+
+    .rasengan {
+        display: none;
+    }
+
+}
+
+@media (min-width: 750px) {
     a.navbar-brand {
         display: none;
     }
 
-    div.bling {
+    .icon-bar {
         display: none;
+    }
 
+    .section2 {
+        display: none;
+    }
+
+    .urusai {
+        display: none;
     }
 }
 
-
-
-
 /* ---------------------- icons ------------------------ */
+
 i {
     font-size: 35px;
     text-align: left;
     color: #fff;
 }
 
+/* --------------------- animation ---------------------- */
 
-
-/* --------------------------------- animation ------------------------- */
 div.ali {
     animation-duration: 3s;
 
@@ -98,23 +172,37 @@ div.olo {
 
 }
 
-
 p {
     animation-duration: 3s;
-    animation-delay: 2.75s
+    animation-delay: 2.75s;
 }
 
+.downArow i {
+    animation-delay: 3s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    color: linear-gradient(to right, #FFF94C, #004FF9);
+
+}
+
+/* --------------------- welcome-section -------------- */
 
 
-
-
-/* ----- welcome-section --------- */
 .mounten {
     width: 100%;
     height: 700px;
     background-image: url("screen/evening-55067.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.downArow {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }
 
 .blur {
@@ -129,18 +217,14 @@ p {
 
 }
 
-
-
 .blur img {
+    border: solid white 2px;
     border-radius: 50%;
     width: 110px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
-
-
 }
 
-
-/* ----------- line ------------ */
+/* --------------------- line ---------------------- */
 
 #blabla {
     height: 4em;
@@ -155,26 +239,28 @@ p {
 }
 
 
-/* ----------------------------------- projects ---------------------------------- */
-/* ------------------------------------------------------------------------------- */
+/* ------------------ projects --------------------- */
 
-.projects {
-    background-image: linear-gradient(#111111, #220056);
+.section2 {
+    padding: 110px;
+
 }
 
-.projects {
+/* -------------------------------------------------- */
 
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(#111111, #22005688);
     width: 100%;
     height: 600px;
-    display: flex;
 
 }
 
-.reza {
+.project-tile {
     position: relative;
     border: solid 5px white;
     border-radius: 12px;
-    width: 289px;
     color: white;
     text-align: center;
     margin: 115px 13px;
@@ -190,7 +276,7 @@ p {
 .babe {
     display: block;
     margin: 15px;
-
+    max-width: 25%;
 }
 
 .overlay {
@@ -205,7 +291,7 @@ p {
     transition: .5s ease;
 }
 
-.reza:hover .overlay {
+.project-tile:hover .overlay {
     bottom: 0;
     height: 100%;
     border-radius: 5.80px;
@@ -221,8 +307,34 @@ p {
     text-align: center;
 }
 
+/* -------------------- buttons -------------------- */
 
-/*------------------------------------- carouse -------------------------------*/
+.tiger {
+    margin-top: 17em;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: solid 1px;
+    outline: none;
+    padding: 15px 45px;
+    border-radius: 4px;
+    background: #fa9902;
+}
+
+#myBtn:hover {
+    color: red;
+    border-color: red;
+
+}
+
+/*-------------------- carousel ---------------------*/
+
 .carousel-item img {
     display: flex;
     align-content: center;
@@ -237,27 +349,142 @@ p {
 
 }
 
+.carousel-inner h2 {
+    margin-bottom: 200px;
+    margin-right: 125px;
+    text-align: end;
+    text-decoration: underline;
+}
 
+.carousel-item h2 {
+    margin-bottom: ;
+    margin-right: ;
+    text-align: ;
+    text-decoration: underline;
+}
 
-/* --------------------------------------- contact ---------------------------------- */
+.htmlinfo {
+    text-decoration: underline;
+}
 
-.monkey {
-    width: 100%;
-    height: 700px;
+/* ------------------- progress ------------------- */
+
+.progress12 {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 5em;
+}
+
+.progress12 h3 {
+    padding-bottom: 20px;
+}
+
+/* -------------- ongoing-projects ---------------- */
+.nextprojects {
+    padding: 40px 150px;
+    display: flex;
+    flex-direction: column;
 
 }
 
-form {
-    margin: 60px;
-    padding: 100px 0;
+.progcontainer19 {
+    background-color: #220056;
+    border-radius: 25px;
+    padding-left: 40px;
 
 }
 
-.contact-dontainer {
-    background-image: url("screen/Repeat Grid 18.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-top: solid #111111 50px;
-    width: 100%;
+.nextprojects h3 {
+    text-align: center;
+    margin: 25px 0 45px 0;
+    color: whitesmoke;
+}
 
+.textcontainer {
+    float: right;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    height: 200px;
+    width: 600px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.number {
+    float: left;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-top: 70px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.number:hover {
+    color: #fa9902;
+    border-color: #fa9902;
+    ;
+}
+
+/* ----------------- contact --------------------- */
+
+.ongoingprojects {
+    border-radius: 25px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #220056;
+    display: flex;
+}
+
+.ongoing {
+    width: 10rem;
+    height: 14px;
+    margin-bottom: 13px;
+    margin-top: 19px;
+    margin-left: 11px;
+}
+
+.rasengan {
+    padding-left: 580px;
+
+}
+
+.rasengan form {
+    margin: 20px;
+    padding: 25px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    width: 400px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.rasengan form h2 {
+    padding-bottom: 10px;
+}
+
+/* --------------- contact 2 --------------------- */
+
+.urusai form {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 19px;
+}
+
+.urusai form h2 {
+    padding-bottom: 9px;
+}
+
+/* --------------- footer --------------------- */
+.footer {
+    background-color: #343a40;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    color: whitesmoke;
+    padding-top: 35px;
 }
