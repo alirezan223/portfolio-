@@ -26,12 +26,6 @@ html {
     background-color: #fff;
 }
 
-@media (min-width: 768px) {
-    .jumbotron {
-        padding-top: calc(var(--jumbotron-padding-y) * 2);
-        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-    }
-}
 
 
 /* ------------------------ icon-bar --------------------------- */
@@ -39,9 +33,7 @@ html {
     width: 100%;
     background-color: #220056;
     overflow: auto;
-    margin-top: 10px;
-
-    border-radius: 4px;
+    border border-radius: 4px;
 }
 
 .icon-bar a {
@@ -62,95 +54,7 @@ html {
     background-color: #343a40;
 }
 
-/* ------------------------ media --------------------------- */
 
-@media (max-width: 380px) {
-    a.mobamba {
-        display: none;
-    }
-
-    .s8 {
-        display: none;
-    }
-
-}
-
-@media (max-width: 812px) {
-    a.mobamba {
-        display: none;
-    }
-
-}
-
-@media (max-width: 375px) {
-    .my-name {
-        display: none;
-    }
-
-    #projects {
-        background-image: linear-gradient(#111111, #220056);
-
-    }
-
-    #blabla {
-        background: gray;
-    }
-
-    #welcome-section {
-        display: none;
-    }
-
-    .project-tile {
-        display: none;
-    }
-
-    .section2 {
-
-        height: 500px;
-    }
-
-    .containerbox1 {
-        display: none;
-    }
-
-    .progress12 {
-        margin-top: 70em;
-    }
-
-
-    .ongoingprojects {
-        margin: 0;
-        padding: 0;
-
-    }
-
-    .ongoing {
-        display: none;
-    }
-
-    .rasengan {
-        display: none;
-    }
-
-}
-
-@media (min-width: 750px) {
-    a.navbar-brand {
-        display: none;
-    }
-
-    .icon-bar {
-        display: none;
-    }
-
-    .section2 {
-        display: none;
-    }
-
-    .urusai {
-        display: none;
-    }
-}
 
 /* ---------------------- icons ------------------------ */
 
@@ -213,7 +117,7 @@ p {
     font-style: italic;
     color: #fff;
     font-weight: bold;
-    padding-TOP: 15em;
+    padding-TOP: 10em;
 
 }
 
@@ -223,6 +127,29 @@ p {
     width: 110px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 }
+
+/* --------------------- h1 ---------------------- */
+#welcome-section,
+h1 {
+    font-size: 100px;
+    color: rgba(225, 225, 225, .1);
+    background-image: url("screen/fire-8837_1920.jpg");
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+
+    0% {
+        background-position: left 0px top 10px;
+    }
+
+    40% {
+        background-position: left 800px top 10px;
+    }
+}
+
 
 /* --------------------- line ---------------------- */
 
@@ -350,9 +277,8 @@ p {
 }
 
 .carousel-inner h2 {
-    margin-bottom: 200px;
-    margin-right: 125px;
-    text-align: end;
+    text-align: center;
+    margin-bottom: 25px;
     text-decoration: underline;
 }
 
@@ -438,6 +364,15 @@ p {
     display: flex;
 }
 
+.ongoingprojects1 {
+    border-radius: 25px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #220056;
+    display: flex;
+}
+
+
 .ongoing {
     width: 10rem;
     height: 14px;
@@ -446,12 +381,12 @@ p {
     margin-left: 11px;
 }
 
-.rasengan {
+#rasengan {
     padding-left: 580px;
 
 }
 
-.rasengan form {
+#rasengan form {
     margin: 20px;
     padding: 25px;
     padding-bottom: 5px;
@@ -461,7 +396,7 @@ p {
     text-align: center;
 }
 
-.rasengan form h2 {
+#rasengan form h2 {
     padding-bottom: 10px;
 }
 
@@ -487,4 +422,124 @@ p {
     width: 100%;
     color: whitesmoke;
     padding-top: 35px;
+}
+
+
+/* ------------------------ media --------------------------- */
+
+@media (max-width: 812px) {
+    a.mobamba {
+        display: none;
+    }
+
+    .s8 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 812px) {
+    a.mobamba {
+        display: none;
+    }
+
+}
+
+@media (max-width: 812px) {
+
+    .nextprojects {
+        display: none;
+    }
+
+}
+
+@media (max-width: 812px) {
+    .my-name {
+        display: none;
+    }
+
+    .nextprojects {
+        display: none;
+    }
+
+    .progcontainer19 {
+        display: none;
+    }
+
+
+    .ongoing {
+        display: none;
+    }
+
+    #rasengan {
+        display: none;
+    }
+
+
+    .ongoingprojects {
+        display: none;
+    }
+
+    #projects {
+        background-color: transparent;
+
+    }
+
+    #blabla {}
+
+    #welcome-section {
+        display: none;
+    }
+
+    .project-tile {
+        display: none;
+    }
+
+    .section2 {
+
+        height: 500px;
+    }
+
+    .containerbox1 {
+        display: none;
+    }
+
+    .progress12 {
+        margin-top: 70em;
+    }
+
+    .ongoing {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 950px) {
+    a.navbar-brand {
+        display: none;
+    }
+
+    .icon-bar {
+        display: none;
+    }
+
+    .section2 {
+        display: none;
+    }
+
+    .urusai {
+        display: none;
+    }
+
+    .ongoingprojects p {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
 }
